@@ -1,0 +1,10 @@
+<html>
+<head>
+</head>
+<body>
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myfunction()">Try it</button>
+<script src="/home/bridgeit/pavan122/JS/myscript.js"></script>
+</body>
+</html>

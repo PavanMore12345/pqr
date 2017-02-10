@@ -1,0 +1,26 @@
+<html>
+<head>
+<style>
+ul
+{
+padding:20px;
+margin-left:10px;
+list-style-type:square;
+list-style-position:inside;
+list-style-image:url("/home/bridgeit/pavan122/images.jpg")
+}
+ul li
+{
+background:yellow;
+color:green;
+}
+</style>
+</head>
+<body>
+<ul>
+<li>tea</li>
+<li>cofee</li>
+<li>milk</li>
+</ul>
+</body>
+</html>

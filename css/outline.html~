@@ -1,0 +1,19 @@
+<html>
+<head>
+<style>
+p.outline
+{
+margin-top:50px;
+margin-left:20px;
+border:1px dashed gray;
+outline-style:dashed;
+outline-color:yellow;
+outline-width:20px;
+padding:20px;
+}
+</style>
+</head>
+<body>
+<p class="outline">this is outline layer</p>
+</body>
+</html>

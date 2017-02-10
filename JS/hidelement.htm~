@@ -1,0 +1,9 @@
+<html>
+<head>
+</head>
+<body>
+<p id="demo">hi this is java script program.</p>
+<button onclick="document.getElementById('demo').style.display='none'">click me</button>
+
+</body>
+</html>

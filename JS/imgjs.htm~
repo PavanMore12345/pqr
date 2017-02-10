@@ -1,0 +1,9 @@
+<html>
+<head>
+</head>
+<body>
+<button onclick="document.getElementById('myimage').src='/home/bridgeit/pavan122/images (1).jpg'">nature image</button>
+<button onclick="document.getElementById('myimage').src='/home/bridgeit/pavan122/images (2).jpg'"> water image</button>
+<img src="/home/bridgeit/pavan122/images.jpg" id="myimage"/>
+</body>
+</html>

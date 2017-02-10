@@ -1,0 +1,65 @@
+<html>
+<head>
+<style>
+table
+{
+width:100%;
+}
+ td tr
+{
+text-align:left;
+color:green;
+}
+th
+{
+text-align:left;
+color:red;
+background-color:black;
+}
+tr:hover
+{
+background:gray;
+}
+tr:nth-child(even)
+{
+background:orange;
+}
+</style>
+</head>
+<body>
+<div style="overflow-x:auto;">
+<table >
+<tr>
+<th>name</th>
+<th>mark</th>
+<th>college</th>
+</tr>
+<tr>
+<td>pavan</td>
+<td>77</td>
+<td> mit college</td>
+</tr>
+<tr>
+<td>mohan</td>
+<td>80</td>
+<td>coep college</td>
+</tr>
+<tr>
+<td>rohan</td>
+<td>84</td>
+<td>coep college</td>
+</tr>
+<tr>
+<td>soham</td>
+<td>90</td>
+<td>pict college</td>
+</tr>
+<tr>
+<td>akshay</td>
+<td>80</td>
+<td>vit college</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
