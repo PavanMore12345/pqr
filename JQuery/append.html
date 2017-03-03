@@ -1,0 +1,29 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function()
+{
+$("#btn1").click(function()
+{
+  $("p").append("<b>bold text</b>");
+}
+);
+$("#btn2").click(function()
+{
+  $("ol").prepend("<li>list4</li>");
+});
+});
+</script>
+</head>
+<body>
+  <button id="btn1">click</button>
+  <button id="btn2">click me</button>
+  <p>hello text with </p>
+  <ol>
+    <li>list1</li>
+    <li>list2</li>
+    <li>list3</li>
+  </ol>
+</body>
+</html>

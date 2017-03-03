@@ -1,0 +1,35 @@
+<html>
+<head>
+  <style>
+  div{
+    width: auto;
+    height: auto;
+    border: 1px solid gray;
+    background-color:yellow;
+  }
+  </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function()
+{
+  $("#btn2").click(function(){
+    $("#demo1").remove();
+  });
+  $("#btn1").click(function()
+{
+  $("#div1").empty();
+});
+});
+</script>
+</head>
+<body>
+  <p id="demo1">hello how are you iam working in the bridgelabz</p>
+  <button id="btn2" >remove</button>
+  <button id="btn1">empty</button>
+  <div id="div1">
+    <p>how are you</p>
+    <p>hi who r u?</p>
+      <p>this is very bad</p>
+    </div>
+</body>
+</html>

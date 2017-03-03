@@ -1,0 +1,111 @@
+<html>
+<head>
+  <style>
+  #div1
+  {
+    width:200px;
+    height:100px;
+    align:center;
+  }
+  h2
+  {
+    color:blue;
+  }
+  #demo
+  {
+  color:red;
+  font-size:25px;
+  }
+  #demo2{
+    color:blue;
+  }
+  </style>
+
+  <script src="https://www.gstatic.com/firebasejs/3.6.10/firebase.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+  <div id="div1">
+    enter name:<input type="text" id="fid" name="name1">
+    enter age:<input type="text" id="fid2" name="name2">
+    enter mark:<input type="text" id="fid3" name="name3">
+    <button onclick="myfun()">login</button>
+    <button onclick="myfun2()">show</button>
+    <br>
+    <br>
+  </div><br><br>
+  <p id="demo"></p>
+  <p id="demo2"></p>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDyW_CRxDoejtVUi-K8x722UbHdgu8QS7w",
+    authDomain: "abcd-1e1ac.firebaseapp.com",
+    databaseURL: "https://abcd-1e1ac.firebaseio.com",
+    storageBucket: "abcd-1e1ac.appspot.com",
+    messagingSenderId: "393954725058"
+  };
+  firebase.initializeApp(config);
+
+function myfun() {
+  var name1=document.getElementById("fid").value;
+  var age1=Number(document.getElementById("fid2").value);
+  var mark1=Number(document.getElementById("fid3").value);
+  var playersRef = firebase.database().ref();
+playersRef.child(name1).set({
+    age: age1,
+    mark: mark1
+});
+}
+function myfun2()
+{
+  var ref = firebase.database().ref();
+
+  ref.on("value", function(snapshot) {
+var temp1=" ";var temp=" ";
+snapshot.forEach(function (value) {
+//  console.log(value.val());
+  console.log( "name is"+value.key);
+   $("#demo").append("<h2>name is :"+value.key+"</h2><br>");
+  var str1="name is"+value.key;
+  //temp1=temp1+"name is"+value.key;
+//document.write("<h1>name is ="+value.key+"</h1><br>");
+  var abc=value.val();
+  for(var a in abc)
+  {
+  //  temp1=temp1+a+" is"+abc[a];
+  console.log(a+"="+abc[a]);
+  $("#demo").append(a+"="+abc[a]+"<br>");
+//  document.write(a+"="+abc[a]+"<br>");
+//var str2="";
+//str2 = str2+"="+abc[a];
+  //var res=str1.concat(str2);
+  //document.write(res);
+//  document.getElementById("demo").innerHTML=res[1];
+  //  console.log("age is"+abc[a]);
+  }
+  //var res=str1.concat(str2);
+//  document.getElementById("demo").innerHTML=res;
+  //var temp22="";
+  // temp22=temp22+temp1+temp;
+   //document.write(temp22);
+  //document.getElementById("demo").innerHTML=temp22;
+  //  temp1=temp+
+  //console.log(abc.key);
+  //console.log("temp1="+temp1);
+//  var temp= "name is"+abc+temp1;
+
+//  console.log(value.key.age);
+//var abc=value.key;
+//console.log(abc.val());
+//document.getElementById("demo").innerHTML=temp;
+});
+//append
+  }, function (error) {
+     console.log("Error: " + error.code);
+  });
+}
+</script>
+</body>
+</html>

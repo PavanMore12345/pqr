@@ -1,0 +1,32 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function()
+{
+  $("#btn1").click(function()
+{
+  $("h1,p").addClass("blue");
+  $("div").addClass("abc");
+  $("h2").removeClass("blue");
+  $("p").toggleClass("blue");
+});
+});
+</script>
+<style>
+.blue{
+  color:blue;
+}
+.abc{
+  background-color: green;
+}
+</style>
+</head>
+<body>
+  <div> hi hello how are you</div>
+  <p>this is p tag</p>
+  <h1>this is h1 tag</h1>
+  <h2>this is h2 tag</h2>
+  <button id="btn1" >click</button>
+</body>
+</html>

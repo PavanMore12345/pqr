@@ -1,0 +1,21 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn").click(function(){
+    alert("hello"+$("#test1").text());
+
+  });
+  $("#btn1").click(function(){
+    alert("hello1"+$("#test1").html())
+  });
+});
+</script>
+</head>
+<body>
+  <button id="btn">ontext</button>
+  <button id="btn1">onhtml</button>
+  <p id="test1">hello iam pavan more<mark>hi</mark>this is </p>
+</body>
+</html>

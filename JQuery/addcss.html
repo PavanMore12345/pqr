@@ -1,0 +1,19 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function()
+{
+$("#btn1").click(function()
+{
+  $("p").css({"color":"blue"});
+  alert($("p").css("color"));
+});
+});
+</script>
+</head>
+<body>
+  <p>hi the object are equal</p>
+  <button id="btn1">click</button>
+</body>
+</html>

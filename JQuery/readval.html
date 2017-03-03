@@ -1,0 +1,16 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    alert("hello"+$("#test1").attr("name"));
+  });
+});
+</script>
+</head>
+<body>
+enter name:<input type="text" id="test1" name="apn">
+<button id="btn1">onclick</button>
+</body>
+</html>

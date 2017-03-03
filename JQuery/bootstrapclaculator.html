@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+  <style>
+  #input1
+  {
+    background-color: skyblue;
+    width:70%;
+  }
+  table
+  {
+    /*border:1px solid gray;*/
+    width:30%;
+    height:30%;
+    padding-left:40px;
+    margin-left:450px;
+    margin-top:200px;
+    margin-right:100px;
+  /*border: 2px solid black;*/
+  }
+.my{
+  border: 2px solid black;
+}
+    .save_button {
+      min-width: 65px;
+      max-width: 65px;
+  }
+  button
+  {
+    text-align: center;
+    width: 100px;
+    height:100%;
+  }
+  </style>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+function fun(val)
+{
+var a=  document.getElementById("input1").value+=val;
+  return a;
+}
+function c(val)
+{
+  document.getElementById("input1").value=val;
+}
+function e()
+{
+  c(eval(document.getElementById("input1").value))
+}
+</script>
+</head>
+<body>
+<table>
+  <tr><td><input class="input-lg" type="text" name="text1" id="input1"></td></tr>
+<tr>
+  <td>
+  <input type="button" class="btn btn-primary save_button" value="1" onclick=fun("1") id="btn1">
+  <input type="button" class="btn btn-primary save_button" value="2" onclick=fun("2") id="btn2">
+  <input type="button" class="btn btn-primary save_button" value="3" onclick=fun("3") id="btn3">
+  <input type="button" class="btn btn-primary save_button" value="+" onclick=fun("+") id="btn4">
+</tr>
+<tr>
+  <td>
+    <input type="button" class="btn btn-primary save_button" value="4" onclick=fun("4") id="btn4">
+    <input type="button" class="btn btn-primary save_button" value="5" onclick=fun("5") id="btn2">
+    <input type="button" class="btn btn-primary save_button" value="6" onclick=fun("6") id="btn3">
+    <input type="button" class="btn btn-primary save_button" value="-" onclick=fun("-")  id="btn4">
+  </td>
+</tr>
+<tr>
+  <td>
+    <input type="button" class="btn btn-primary save_button" value="7" onclick=fun("7") id="btn4">
+    <input type="button" class="btn btn-primary save_button" value="8" onclick=fun("8") id="btn2">
+    <input type="button" class="btn btn-primary save_button" value="9" onclick=fun("9") id="btn3">
+    <input type="button" class="btn btn-primary save_button" value="*" onclick=fun("*") id="btn4">
+  </td>
+</tr>
+<tr>
+  <td>
+    <input type="button" class="btn btn-primary save_button" value="0" onclick=fun("0") id="btn4">
+    <input type="button" class="btn btn-primary save_button" value="/" onclick=fun("/") id="btn2">
+    <input type="button" class="btn btn-primary save_button" value="AC" onclick=c("")  id="btn3">
+    <input type="button" class="btn btn-primary save_button" value="=" onclick=e()   id="btn4">
+  </td>
+</tr>
+</table>
+
+</body>
+</html>
